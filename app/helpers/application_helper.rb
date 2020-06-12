@@ -38,4 +38,12 @@ module ApplicationHelper
     end
   end
 
+  def markdown(text)
+    md = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
+    return md.render(text).html_safe
+  end
+
+  def ignore
+  end
+
 end

@@ -6,6 +6,18 @@
   border-bottom:1px dashed #ccc;
   padding-bottom:15px;
   margin-bottom:15px;
+
+  p { margin-top:9px; }
+
+  li { 
+    margin-left:4px;
+    list-style:disclosure-closed;
+  }
+
+  h2 {
+    font-size: 15px;
+    font-weight: 600;
+  }
 }
 
 .issueUpdates__item:last-child {
@@ -28,4 +40,8 @@
 
 .issueUpdates__edit {
   margin-left:8px;
+}
+
+
+.issueUpdates__text {
 }

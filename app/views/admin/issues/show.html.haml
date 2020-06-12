@@ -62,7 +62,7 @@
             %p.issueUpdates__text
               %b= update.state.humanize
               &mdash;
-              = update.text
+              %p= markdown(update.text)
             - if update.service_status
               %p.issueUpdates__status
                 Set service status to #{service_status_tag update.service_status}

@@ -24,6 +24,13 @@
 .issueDetail__description {
   line-height:24px;
   margin-bottom:25px;
+  p {
+    margin-top:18px;
+  }
+  li {
+    list-style:disclosure-closed;
+    margin-left:8px;
+  }
 }
 
 .issueDetail__details {
