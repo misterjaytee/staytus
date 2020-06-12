@@ -24,6 +24,9 @@
         %dd.fieldSet__input
           .fieldSet__selectContainer
             = f.collection_select :group_id, ServiceGroup.all, :id, :name, :include_blank => true
+    %dl.fieldSet__field.u-margin
+      %dt.fieldSet__label= f.label :position
+      %dd.fieldSet__input= f.text_field :position, :class => 'textInput'
 
   .formButtons
     - unless @service.new_record?

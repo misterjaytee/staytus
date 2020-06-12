@@ -19,6 +19,7 @@ class Service < ActiveRecord::Base
   validates :permalink, :presence => true, :uniqueness => true, :slug => true
   validates :status_id, :presence => true
   validates :description, :length => {:maximum => 1000}
+  validates :position, numericality: { only_integer: true }
 
   default_value :permalink, -> { self.name.parameterize }
   default_value :status_id, -> { ServiceStatus.default.try(:id) }
